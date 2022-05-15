@@ -733,7 +733,7 @@ function LeftColumn(props) {
       _react2.default.createElement(
         "div",
         { className: "w3-display-container" },
-        _react2.default.createElement("img", { src: "../img/cvImg.png", alt: "Avatar", className: "cvImage" }),
+        _react2.default.createElement("img", { src: "../img/cvImg.png", className: "cvImage" }),
         _react2.default.createElement(
           "div",
           { className: "w3-display-bottomleft w3-container w3-text-black" },
