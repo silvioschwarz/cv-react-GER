@@ -1,5 +1,6 @@
 import React from "react";
-// import {cvImage} from "../img/cvImg.png"
+// import cvImage from "../img/cvImg.png"
+// import wordcloudImage from  "../img/wordcloudGER-1.png"
 import languages from "../data/languages";
 import programming from "../data/programming";
 import expertise from "../data/expertise";
