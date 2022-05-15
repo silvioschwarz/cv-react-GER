@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body,html, img, ul{
+    margin: 0;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    height: 100%;
+}
+
+.nomargin{
+    margin: 0;
+}
+
+.no-top-margin{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.no-bottom-margin{
+    margin-bottom: 0;
+}
+
+hr{
+    margin: 0;   
+}
+
+.entry-hr{
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+
+.entry-title{
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.w3-container > .w3-container{
+    padding: 1%;
+}
+
+
+.cvImage{
+    max-width: 100%;
+    border-radius: 0%;
+}
+
+p {
+    margin:0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.extra{
+    margin-top: 0;
+}
+
+
+.info{
+    margin:10px 0px 10px 0px;
+}
+
+.expertise-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.expertise-div{
+    max-width: 500px;
+    max-height: 15px;
+    border-radius: 9px;
+    padding: 16px 8px 16px 8px;
+    line-height: 0px;
+}
+
+.certificates{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;  
+    margin: 0px 0px 10px 0px;
+}
+
+.certificates > a{
+    margin: 0;
+    text-decoration: none;
+}
+
+.languageTitle{
+    margin:5px;
+}
+
+.wordcloud{
+    margin: 0;
+    margin-bottom: 5%;
+    padding:0;
+}
+
+.wordcloud > img{
+    margin: 0;
+    padding:0;
+    max-width: 100%;
+}
