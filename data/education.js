@@ -1,28 +1,49 @@
 export default [
     {
-        jobtitle: "GIS und Webmapping",
+        jobtitle: "GIS and Webmapping",
         company: "GIS Akademie Berlin",
         date: "Feb 2022 - Sep 2022",
-        description: ["Arcgis, QGIS, WEbmapping"]
+        project:"ArcGIS, QGIS, Webmapping",
+        description: 
+        [
+            "Georeferenzierung, Vektor-/Rasterdaten, Kartenlayout, Automatisierung", 
+            "PyQGIS, PlugIn-Erstellung, Arbeiten mit PostgreSQL/PostGIS",
+            "HTML, CSS, JavaScript, PHP, openLayers, LeafletJS, GeoServer"
+         ],
     },
     {
-        jobtitle: "Earth Science (M.Sc.) ",
+        jobtitle: "Master of Science - Geowissenschaften",
         company: "Universität Potsdam",
-        date: "Oct 2011- Sep 2019",
-        description: ["sss"]
+        date: "Okt 2011- Sep 2019",
+        project: "Geophysik - 90/120 LP abgeschlossene Studienleistung",
+        description: 
+        [
+            "Masterpraktikum: Wolfram|Alpha. 2012",
+            "1. Abschlussarbeit: Sensitivity Study of a Bayesian Approach. 2014-2016",
+            "2. Abschlussarbeit: Classification of tremor sources during the Holuhraun sequence, Iceland. 2019"
+        ]
     },
     {
-        jobtitle: "Earth Science (B.Sc.) ",
+        jobtitle: "Bachelor of Science - Geowissenschaften",
         company: "Universität Potsdam",
-        date: "Oct 2008  - Sep 2011",
-        description: ["ddd"]
+        date: "Okt 2008  - Sep 2011",
+        project:"Geologie, Mathematik, Physik, Chemie",
+        description: 
+        [
+            "Bachelorpraktikum: Universität Leipzig. 2011",
+            "Abschlussarbeit: Simulation von Bodenbewegungsszenarien von Starkbeben"
+        ]
     },
-    {
-        jobtitle: "Abitur",
-        company: "staatl. Gymnasium 'Klosterschule' Roßleben",
-        date: "2008",
-        description: ["Mathematik, Geographie<br/>Abschlussarbeit: Naturkatastrophen und ihr Einfluss auf das Leben in der Gegenwart"]
-    },    
+    // {
+    //     jobtitle: "Abitur",
+    //     company: "staatl. Gymnasium 'Klosterschule' Roßleben",
+    //     date: "2008",
+    //     project:"Mathematik, Geographie",
+    //     description: 
+    //     [
+    //         "Abschlussarbeit: Naturkatastrophen und ihr Einfluss auf das Leben in der Gegenwart"
+    //     ]
+    // },    
 ]
 
 // <div className="w3-container">

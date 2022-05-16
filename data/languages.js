@@ -1,14 +1,14 @@
 export default [
     {
-        language: "German",
+        language: "Deutsch",
         skill: "100%"
     },
     {
-        language: "English",
+        language: "Englisch",
         skill: "90%"
     },
     {
-        language: "Italian",
+        language: "Italienisch",
         skill: "50%"
     }
 ]

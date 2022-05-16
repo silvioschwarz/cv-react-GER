@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 17);
+/******/ 	return __webpack_require__(__webpack_require__.s = 18);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -74,9 +74,9 @@
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(21);
+  module.exports = __webpack_require__(22);
 } else {
-  module.exports = __webpack_require__(20);
+  module.exports = __webpack_require__(21);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -376,9 +376,9 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(25);
+  module.exports = __webpack_require__(26);
 } else {
-  module.exports = __webpack_require__(24);
+  module.exports = __webpack_require__(25);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -431,8 +431,7 @@ function App() {
       { className: "w3-row-padding" },
       _react2.default.createElement(_LeftColumn2.default, null),
       _react2.default.createElement(_RightColumn2.default, null)
-    ),
-    _react2.default.createElement(_Footer2.default, null)
+    )
   );
 }
 
@@ -475,9 +474,9 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(19);
+  module.exports = __webpack_require__(20);
 } else {
-  module.exports = __webpack_require__(18);
+  module.exports = __webpack_require__(19);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -537,14 +536,18 @@ function Entry(props) {
       props.date
     ),
     _react2.default.createElement(
-      "p",
-      { className: "nomargin" },
+      "h6",
+      null,
       props.project,
       " ",
       props.link && _react2.default.createElement(
-        "a",
-        { href: props.link },
-        "Example"
+        "button",
+        null,
+        _react2.default.createElement(
+          "a",
+          { href: props.link, target: "_blank" },
+          "Klick f\xFCr Demo"
+        )
       )
     ),
     _react2.default.createElement(
@@ -602,16 +605,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function Footer() {
   return _react2.default.createElement(
     "footer",
-    { "class": "w3-container w3-blue-gray w3-center w3-margin-top" },
+    { className: "w3-container w3-blue-gray w3-center w3-margin-top" },
     _react2.default.createElement(
       "p",
       null,
       "Find me on social media."
     ),
-    _react2.default.createElement("i", { "class": "fa fa-github fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
-    _react2.default.createElement("i", { "class": "fa fa-linkedin fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
-    _react2.default.createElement("i", { "class": "fa fa-instagram fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
-    _react2.default.createElement("i", { "class": "fa fa-twitter fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
+    _react2.default.createElement("i", { className: "fa fa-github fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
+    _react2.default.createElement("i", { className: "fa fa-linkedin fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
+    _react2.default.createElement("i", { className: "fa fa-instagram fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
+    _react2.default.createElement("i", { className: "fa fa-twitter fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
     _react2.default.createElement(
       "p",
       null,
@@ -752,9 +755,15 @@ function LeftColumn(props) {
           { className: "nomargin" },
           _react2.default.createElement(
             "p",
+            null,
+            _react2.default.createElement("i", { className: "fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue-gray" }),
+            "Geowissenschaftler (B.Sc.)"
+          ),
+          _react2.default.createElement(
+            "p",
             { className: "info" },
             _react2.default.createElement("i", { className: "fa fa-home fa-fw w3-margin-right w3-large w3-text-blue-gray" }),
-            "Potsdam, Germany"
+            "Potsdam, Deutschland"
           ),
           _react2.default.createElement(
             "p",
@@ -796,9 +805,11 @@ function LeftColumn(props) {
             _react2.default.createElement(
               "b",
               null,
-              "Skills"
+              "F\xE4higkeiten"
             )
           ),
+          _react2.default.createElement("i", { className: "fa fa-linux fa-fw w3-margin-right w3-xxxlarge w3-text-blue-gray" }),
+          _react2.default.createElement("i", { className: "fa fa-windows fa-fw w3-margin-right w3-xxxlarge w3-text-blue-gray" }),
           _react2.default.createElement(
             "div",
             null,
@@ -814,7 +825,7 @@ function LeftColumn(props) {
             _react2.default.createElement(
               "b",
               null,
-              "Languages"
+              "Sprachen"
             )
           ),
           languagesComp
@@ -828,7 +839,7 @@ function LeftColumn(props) {
             _react2.default.createElement(
               "b",
               null,
-              "Certificates"
+              "Zertifikate"
             )
           ),
           _react2.default.createElement(
@@ -933,19 +944,50 @@ function LeftColumn(props) {
             )
           )
         ),
-        _react2.default.createElement("br", null),
+        _react2.default.createElement(
+          "p",
+          { className: "w3-large w3-text-theme" },
+          _react2.default.createElement(
+            "b",
+            null,
+            "Interessen"
+          )
+        ),
         _react2.default.createElement(
           "div",
           { className: "wordcloud" },
           _react2.default.createElement("img", { src: "./img/wordcloudGER-1.png" })
+        )
+      ),
+      _react2.default.createElement(
+        "footer",
+        { className: "w3-container w3-blue-gray w3-center w3-margin-top" },
+        _react2.default.createElement(
+          "p",
+          null,
+          "Social Media"
+        ),
+        _react2.default.createElement("i", { className: "fa fa-github fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
+        _react2.default.createElement("i", { className: "fa fa-linkedin fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
+        _react2.default.createElement("i", { className: "fa fa-instagram fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
+        _react2.default.createElement("i", { className: "fa fa-twitter fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
+        _react2.default.createElement(
+          "p",
+          null,
+          "Powered by",
+          " ",
+          _react2.default.createElement(
+            "a",
+            { href: "https://www.w3schools.com/w3css/default.asp", target: "_blank" },
+            "w3.css"
+          )
         )
       )
     ),
     _react2.default.createElement("br", null)
   );
 }
-// import cvImage from "../img/cvImg.png"
-// import wordcloudImage from  "../img/wordcloudGER-1.png"
+// import {cvImage} from "../img/cvImg.png";
 
 /***/ }),
 /* 11 */
@@ -975,6 +1017,10 @@ var _experience = __webpack_require__(13);
 
 var _experience2 = _interopRequireDefault(_experience);
 
+var _projects = __webpack_require__(17);
+
+var _projects2 = _interopRequireDefault(_projects);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function RightColumn(props) {
@@ -1001,6 +1047,19 @@ function RightColumn(props) {
       description: item.description
     });
   });
+
+  var projectElements = _projects2.default.map(function (item) {
+    return _react2.default.createElement(_Entry2.default, {
+      key: item.jobtitle,
+      jobtitle: item.jobtitle,
+      company: item.company,
+      date: item.date,
+      project: item.project,
+      link: item.link,
+      description: item.description
+    });
+  });
+
   return _react2.default.createElement(
     "div",
     { className: "w3-twothird right-column" },
@@ -1011,7 +1070,7 @@ function RightColumn(props) {
         "h2",
         { className: "w3-text-grey " },
         _react2.default.createElement("i", { className: "fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray" }),
-        "Work Experience"
+        "Arbeitserfahrung"
       ),
       experienceElements
     ),
@@ -1022,7 +1081,7 @@ function RightColumn(props) {
         "h2",
         { className: "w3-text-grey" },
         _react2.default.createElement("i", { className: "fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray" }),
-        "Education"
+        "Bildung"
       ),
       educationElements
     ),
@@ -1033,9 +1092,9 @@ function RightColumn(props) {
         "h2",
         { className: "w3-text-grey" },
         _react2.default.createElement("i", { className: "fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray" }),
-        "Projects"
+        "Projekte"
       ),
-      "haha"
+      projectElements
     )
   );
 }
@@ -1051,103 +1110,24 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.default = [{
-    jobtitle: "GIS und Webmapping",
+    jobtitle: "GIS and Webmapping",
     company: "GIS Akademie Berlin",
     date: "Feb 2022 - Sep 2022",
-    description: ["Arcgis, QGIS, WEbmapping"]
+    project: "ArcGIS, QGIS, Webmapping",
+    description: ["Georeferenzierung, Vektor-/Rasterdaten, Kartenlayout, Automatisierung", "PyQGIS, PlugIn-Erstellung, Arbeiten mit PostgreSQL/PostGIS", "HTML, CSS, JavaScript, PHP, openLayers, LeafletJS, GeoServer"]
 }, {
-    jobtitle: "Earth Science (M.Sc.) ",
+    jobtitle: "Master of Science - Geowissenschaften",
     company: "Universität Potsdam",
-    date: "Oct 2011- Sep 2019",
-    description: ["sss"]
+    date: "Okt 2011- Sep 2019",
+    project: "Geophysik - 90/120 LP abgeschlossene Studienleistung",
+    description: ["Masterpraktikum: Wolfram|Alpha. 2012", "1. Abschlussarbeit: Sensitivity Study of a Bayesian Approach. 2014-2016", "2. Abschlussarbeit: Classification of tremor sources during the Holuhraun sequence, Iceland. 2019"]
 }, {
-    jobtitle: "Earth Science (B.Sc.) ",
+    jobtitle: "Bachelor of Science - Geowissenschaften",
     company: "Universität Potsdam",
-    date: "Oct 2008  - Sep 2011",
-    description: ["ddd"]
-}, {
-    jobtitle: "Abitur",
-    company: "staatl. Gymnasium 'Klosterschule' Roßleben",
-    date: "2008",
-    description: ["Mathematik, Geographie<br/>Abschlussarbeit: Naturkatastrophen und ihr Einfluss auf das Leben in der Gegenwart"]
+    date: "Okt 2008  - Sep 2011",
+    project: "Geologie, Mathematik, Physik, Chemie",
+    description: ["Bachelorpraktikum: Universität Leipzig. 2011", "Abschlussarbeit: Simulation von Bodenbewegungsszenarien von Starkbeben"]
 }];
-
-// <div className="w3-container">
-//           <h5 className="w3-opacity">
-//             <b>GIS und Webmapping / GIS Akademie Berlin</b>
-//           </h5>
-//           <h6 className="w3-text-blue-gray">
-//             <i className="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2022 -
-//             Sep 2022
-//           </h6>
-//           <div className="gis-container">
-//             <div className="gis-item">
-//               <h6>
-//                 <u>ArcGIS</u>
-//               </h6>
-//               {/* <!-- <ul>
-//                     <li>Datenerfassung, Georeferenzierung, Digitalisierung</li>
-//                     <li>Layout</li>
-//                     3d analyst, spatial analyst
-//                     arbeit mit vektor und raster daten, geodatabase
-//                     <li>Modell Automatisierung</li>
-//                   </ul> --> */}
-//             </div>
-//             <div className="gis-item">
-//               <h6>
-//                 <u>QGIS</u>
-//               </h6>
-//               {/* <!-- <ul>
-//                     <li></li>
-//                     <li>PyQGIS</li>
-//                     <li>PlugIn Programmierung</li>
-//                   </ul> --> */}
-//             </div>
-//             <div className="gis-item">
-//               <h6>
-//                 <u>Webmapping</u>
-//               </h6>
-//               {/* <!-- <ul>
-//                     <li>HTML, CSS, JavaScript, PHP, PostgreSQL</li>
-//                     <li>Frameworks: jQuery, Ajax, Bootstrap</li>
-//                     <li>Clients: Leaflet, OpenLayers</li>
-//                     <li>Server: GeoServer</li>
-//                   </ul> --> */}
-//             </div>
-//           </div>
-//           <hr />
-//         </div>
-
-//         <div className="w3-container">
-//           <h5 className="w3-opacity">
-//             <b>Earth Science (B.Sc.) / Universität Potsdam</b>
-//           </h5>
-//           <h6 className="w3-text-blue-gray">
-//             <i className="fa fa-calendar fa-fw w3-margin-right"></i>2008 - 2011
-//           </h6>
-//           <p>
-//             Geologie, Mathematik, Physik, Chemie <br />
-//             Abschlussarbeit: Simulation von Bodenbewegungsszenarien von
-//             Starkbeben
-//           </p>
-//           <br />
-//         </div>
-
-//         <div className="w3-container">
-//           <h5 className="w3-opacity">
-//             <b>Abitur / staatl. Gymnasium "Klosterschule" Roßleben</b>
-//           </h5>
-//           <h6 className="w3-text-blue-gray">
-//             <i className="fa fa-calendar fa-fw w3-margin-right"></i>2008
-//           </h6>
-//           <p>
-//             Mathematik, Geographie
-//             <br />
-//             Abschlussarbeit: Naturkatastrophen und ihr Einfluss auf das Leben in
-//             der Gegenwart
-//           </p>
-//           <br />
-//         </div>
 
 /***/ }),
 /* 13 */
@@ -1160,136 +1140,47 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.default = [{
-    jobtitle: "Student Researcher",
+    jobtitle: "Studentische Hilfskraft",
     company: "Universität Potsdam",
-    date: "May 2019 - Oct 2019",
-    project: "Classification of eruptive tremor sources in Holuhraun sequence, Iceland",
-    description: ["fingerprinting seismic traces with the FAST algorithm", "signal processing of earthquake data"]
+    date: "Mai 2019 - Okt 2019",
+    project: "Classification of eruptive tremor sources of Holuhraun sequence, Iceland",
+    description: ["Signalverarbeitung von Erdbebendaten", "Erstellung von 'Fingerabdrücken' seismischer Tremorquellen miit Hilfe des FAST Algorithmus"]
 }, {
-    jobtitle: "Student NIS Specialist",
+    jobtitle: "Studentische NIS Fachkraft",
     company: "Assecor GmbH, Berlin",
     date: "Aug 2014 - Jun 2015",
-    project: "resolve 3 month delta for Vattenfall Europe Sales GmbH",
-    description: ["update documentation of Berlin power grid according to specification in Smallworld GIS"]
+    project: "Leitungsdokuentation des Berliner Stromnetzes für Vattenfall Europe Sales GmbH",
+    description: ["lagerichtiges Einpflegen von Leitungselementen in Smallworld GIS", "erfolgreich Konflikte zur Dokumentation behoben"]
 }, {
-    jobtitle: "Student System Administrator",
+    jobtitle: "Studentischer System Administrator",
     company: "Assecor GmbH, Berlin",
-    date: "Nov 2013 - Mar 2014",
-    project: "migration of IT Infrastruture to Windows 8 for BIOTRONIK SE & Co. KG",
-    description: ["remote upgrade using Citrix", "roll-out of update via remote server", "maintainance and upgrade of hardware components"]
+    date: "Nov 2013 - Mär 2014",
+    project: "Migration der IT Infrastruktur zu Windows 7 für BIOTRONIK SE & Co. KG",
+    description: ["Fernwartung von Endnutzergeräten", "automatisiertes Netzwerk-Upgrade von Clients zu Windows 7 ", "Pflege und Austausch von Hardwarekomponenten"]
 }, {
-    jobtitle: "Intern Research & Development",
+    jobtitle: "Masterpraktikum R&D",
     company: "Wolfram|Alpha, Champaign, USA",
     date: "Sep 2012 - Nov 2012",
-    project: "develop geophysical content for Wolfram|Alpha",
+    project: "Entwicklung geophysikalsicher Inhalte for Wolfram|Alpha",
     link: "https://www.wolframalpha.com/input?i=seismic+moment+magnitude",
-    description: ["literature research of geophysical formulae and definition", "collaborative development by using version control in Eclipse", "succesfully added interactive calculation of seismic magnitude scales, earthquake characteristics, ground motion prediction and response spectra"]
+    description: ["kollaborative Anwendungsentwichlung mittels Versionskontrolle", "interaktive Berechung seismischer Charakteristika wie Magnituden, Erdbebenmetriken, Bodenbewegungsgleichungen"]
 }, {
-    jobtitle: "Student Researcher",
+    jobtitle: "Studentische Hilfskraft",
     company: "Universität Potsdam",
     date: "Jun 2011 - Aug 2012",
-    project: "seismological model and consulting Council for Geoscience, Pretoria, South Africa",
+    project: "Seismologische Beratung für das Council for Geoscience, Pretoria, South Africa",
     // link:"https://earthquake-distances.herokuapp.com/"
-    link: "https://github.com/silvioschwarz/Earthquake-Source-to-Site-Metrics",
+    // link:"https://github.com/silvioschwarz/Earthquake-Source-to-Site-Metrics",
     description: [
     // "geophysikalische prospektion und seismologische Modellbildung sowie consultingleisctungen für den ",
-    "calculation of source-to-site distances of earthquakes", "established two new source-to-site metrics", "interactive visualization using plotly Dash and Heroku", "1 week consulting for Prof. Julian J. Bommer, Imperial College London"]
+    "interaktive Berechnung von 'source-to-site' Distanzen von Erdbeben", "Entwicklung zweier neuer Distanzmetriken", "1-wöchige Beratung für Prof. Julian J. Bommer, Imperial College London"]
 }, {
-    jobtitle: "Internship",
+    jobtitle: "Bachelorpraktikum",
     company: "Universität Leipzig",
-    date: "Mar 2011",
-    project: "maintanance of the seismological network of Saxony",
-    description: ["configuration of ISDN routers through minicom/hyperterminal", "on-site collection of seismological data and maintanance of stations", "developed automation script in MATLAB for file format conversion", "processing of 2010 Maule Earthquake data of for Dr. Klaus Bataille, Chile"]
+    date: "Mär 2011",
+    project: "Pflege des seismologischen Netzwerkes von Sachsen",
+    description: ["Konfiguration von ISDN Routern mittels minicom/hyperterminal", "vor-Ort Wartung seismologischer Stationen und Datenaufnahme", "Verarbeitung seismischer Daten des 2010 Maule Erdbeben"]
 }];
-
-// <div className="w3-container">
-//           <h5 className="w3-opacity">
-//             <b>Student Researcher / Univesität Potsdam</b>
-//           </h5>
-//           <h6 className="w3-text-blue-gray">
-//             <i className="fa fa-calendar fa-fw w3-margin-right"></i>May 2019 -
-//             Oct 2019
-//             {/* <!-- <span className="w3-tag w3-blue-gray w3-round">Current</span> --> */}
-//           </h6>
-//           <p>
-//             Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in
-//             deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta
-//             ea et odio, unde doloremque repellendus iure, iste.
-//           </p>
-//           <hr />
-//         </div>
-
-//         <div className="w3-container">
-//           <h5 className="w3-opacity">
-//             <b>NIS Engineer / Assecor GmbH, Berlin</b>
-//           </h5>
-//           <h6 className="w3-text-blue-gray">
-//             <i className="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 -
-//             Dec 2014
-//           </h6>
-//           <p>Documentation of Berlin power grid</p>
-//           <hr />
-//         </div>
-
-//         <div className="w3-container">
-//           <h5 className="w3-opacity">
-//             <b>System Administration / Assecor GmbH, Berlin</b>
-//           </h5>
-//           <h6 className="w3-text-blue-gray">
-//             <i className="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2013 -
-//             Mar 2014
-//           </h6>
-//           <ul>
-//             <li>
-//               migration of IT Infrastruture to WIndows 8 BIOTRONIK SE & Co. KG
-//             </li>
-//             <li></li>
-//             <li></li>
-//             <li></li>
-//           </ul>
-//           <hr />
-//         </div>
-
-//         <div className="w3-container">
-//           <h5 className="w3-opacity">
-//             <b>Research & Development / Wolfram|Alpha, Champaign,IL, USA</b>
-//           </h5>
-//           <h6 className="w3-text-blue-gray">
-//             <i className="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2012 -
-//             Nov 2012
-//           </h6>
-//           <p>
-//             migration of IT Infrastruture to WIndows 8 BIOTRONIK SE & Co. KG
-//           </p>
-//           <hr />
-//         </div>
-
-//         <div className="w3-container">
-//           <h5 className="w3-opacity">
-//             <b>Student Researcher / Universität Potsdam</b>
-//           </h5>
-//           <h6 className="w3-text-blue-gray">
-//             <i className="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2011 -
-//             Aug 2012
-//           </h6>
-//           <p>
-//             migration of IT Infrastruture to WIndows 8 BIOTRONIK SE & Co. KG
-//           </p>
-//           <hr />
-//         </div>
-
-//         <div className="w3-container">
-//           <h5 className="w3-opacity">
-//             <b>Internship / Universität Leipzig</b>
-//           </h5>
-//           <h6 className="w3-text-blue-gray">
-//             <i className="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2011
-//           </h6>
-//           <p>
-//             migration of IT Infrastruture to WIndows 8 BIOTRONIK SE & Co. KG
-//           </p>
-//           <hr />
-//         </div>
 
 /***/ }),
 /* 14 */
@@ -1301,7 +1192,7 @@ exports.default = [{
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.default = [{ title: "ground motion" }, { title: "seismology" }, { title: "GIS" }, { title: "PERN" }];
+exports.default = [{ title: "Bodenbewegungsmodelle" }, { title: "Seismologie" }, { title: "QGIS" }, { title: "ArcGIS" }, { title: "Machine Learning" }, { title: "PERN" }, { title: "Wahrscheinlichkeitstheorie" }];
 
 /***/ }),
 /* 15 */
@@ -1314,13 +1205,13 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.default = [{
-    language: "German",
+    language: "Deutsch",
     skill: "100%"
 }, {
-    language: "English",
+    language: "Englisch",
     skill: "90%"
 }, {
-    language: "Italian",
+    language: "Italienisch",
     skill: "50%"
 }];
 
@@ -1336,10 +1227,16 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = [{
     language: "Python",
-    skill: "100%"
+    skill: "85%"
 }, {
     language: "R",
-    skill: "90%"
+    skill: "70%"
+}, {
+    language: "Git/GitHub",
+    skill: "70%"
+}, {
+    language: "Shell Scripting",
+    skill: "70%"
 }, {
     language: "PERN",
     skill: "50%"
@@ -1347,6 +1244,32 @@ exports.default = [{
 
 /***/ }),
 /* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = [{
+    jobtitle: "Terror X Africa",
+    company: "HackHPI about://social.good",
+    date: "2019",
+    project: "22h Hackathon: IBM cross-border effects challenge Bewaffnete Konflikte",
+    // link:"https://terrorxafrica.herokuapp.com",
+    description: []
+}, {
+    jobtitle: "TerremotoPi",
+    company: "",
+    date: "2015 - current",
+    project: "seismische Station mit Echtzeit-Fähigektien auf  Grundlage eines RaspberryPi",
+    // link:"https://silvioschwarz.github.io/TerremotoPi/",
+    description: []
+}];
+
+/***/ }),
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1376,7 +1299,7 @@ _reactDom2.default.render(_react2.default.createElement(_App2.default, null), do
 // );
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1398,7 +1321,7 @@ if (process.env.NODE_ENV !== "production") {
 var React = __webpack_require__(0);
 var _assign = __webpack_require__(2);
 var Scheduler = __webpack_require__(3);
-var tracing = __webpack_require__(26);
+var tracing = __webpack_require__(27);
 
 var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
 
@@ -27646,7 +27569,7 @@ exports.version = ReactVersion;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27950,7 +27873,7 @@ exports.unstable_renderSubtreeIntoContainer=function(a,b,c,d){if(!rk(c))throw Er
 
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30291,7 +30214,7 @@ exports.version = ReactVersion;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30321,7 +30244,7 @@ exports.useLayoutEffect=function(a,b){return S().useLayoutEffect(a,b)};exports.u
 
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30676,7 +30599,7 @@ exports.unstable_wrap = unstable_wrap;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30692,7 +30615,7 @@ var b=0;exports.__interactionsRef=null;exports.__subscriberRef=null;exports.unst
 
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31346,7 +31269,7 @@ exports.unstable_wrapCallback = unstable_wrapCallback;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31373,16 +31296,16 @@ exports.unstable_wrapCallback=function(a){var b=P;return function(){var c=P;P=b;
 
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(23);
+  module.exports = __webpack_require__(24);
 } else {
-  module.exports = __webpack_require__(22);
+  module.exports = __webpack_require__(23);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))

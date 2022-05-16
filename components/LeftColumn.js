@@ -1,6 +1,5 @@
 import React from "react";
-// import cvImage from "../img/cvImg.png"
-// import wordcloudImage from  "../img/wordcloudGER-1.png"
+// import {cvImage} from "../img/cvImg.png";
 import languages from "../data/languages";
 import programming from "../data/programming";
 import expertise from "../data/expertise";
@@ -43,18 +42,22 @@ export default function LeftColumn(props) {
         </div>
         <div className="w3-container">
           <div className="nomargin">
-          <p className="info">
-            <i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue-gray"></i>
-            Potsdam, Germany
-          </p>
-          <p className="info">
-            <i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue-gray"></i>
-            admin@silvioschwarz.com
-          </p>
-          <p className="info">
-            <i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue-gray"></i>
-            +49 174 6507598
-          </p>
+            <p>
+              <i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue-gray"></i>
+              Geowissenschaftler (B.Sc.)
+            </p>
+            <p className="info">
+              <i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue-gray"></i>
+              Potsdam, Deutschland
+            </p>
+            <p className="info">
+              <i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue-gray"></i>
+              admin@silvioschwarz.com
+            </p>
+            <p className="info">
+              <i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue-gray"></i>
+              +49 174 6507598
+            </p>
           </div>
 
           <div className="expertise">
@@ -66,8 +69,10 @@ export default function LeftColumn(props) {
 
           <div className="skills">
             <p className="w3-large">
-              <b>Skills</b>
+              <b>Fähigkeiten</b>
             </p>
+            <i className="fa fa-linux fa-fw w3-margin-right w3-xxxlarge w3-text-blue-gray"></i>
+            <i className="fa fa-windows fa-fw w3-margin-right w3-xxxlarge w3-text-blue-gray"></i>
             <div>{programmingComp}</div>
           </div>
 
@@ -75,14 +80,14 @@ export default function LeftColumn(props) {
             <p className="w3-large w3-text-theme">
               <b>
                 {/* <i className="fa fa-globe fa-fw w3-margin-right w3-text-blue-gray"></i> */}
-                Languages
+                Sprachen
               </b>
             </p>
             {languagesComp}
           </div>
           <div>
             <p className="w3-large w3-text-theme">
-              <b>Certificates</b>
+              <b>Zertifikate</b>
             </p>
             <div className="w3-large w3-text-theme nomargin">
               <u>
@@ -140,12 +145,26 @@ export default function LeftColumn(props) {
             </div>
           </div>
 
-          <br />
-
+          <p className="w3-large w3-text-theme">
+              <b>Interessen</b>
+            </p>
           <div className="wordcloud">
             <img src="./img/wordcloudGER-1.png"></img>
           </div>
         </div>
+        <footer className="w3-container w3-blue-gray w3-center w3-margin-top">
+      <p>Social Media</p>
+      <i className="fa fa-github fa-fw w3-margin-right w3-xxlarge w3-hover-opacity"></i>
+      <i className="fa fa-linkedin fa-fw w3-margin-right w3-xxlarge w3-hover-opacity"></i>
+      <i className="fa fa-instagram fa-fw w3-margin-right w3-xxlarge w3-hover-opacity"></i>
+      <i className="fa fa-twitter fa-fw w3-margin-right w3-xxlarge w3-hover-opacity"></i>
+      <p>
+        Powered by{" "}
+        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">
+          w3.css
+        </a>
+      </p>
+    </footer>
       </div>
       <br />
 

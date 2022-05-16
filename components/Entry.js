@@ -7,7 +7,8 @@ export default function Entry(props) {
     <div className="w3-container">
       <h5 className="w3-opacity nomargin">
         <b className="entry-title">
-          <span>{props.jobtitle}</span><span>{props.company}</span>
+          <span>{props.jobtitle}</span>
+          <span>{props.company}</span>
         </b>
       </h5>
       <h6 className="w3-text-blue-gray no-top-margin">
@@ -15,8 +16,35 @@ export default function Entry(props) {
         {props.date}
         {/* <!-- <span className="w3-tag w3-blue-gray w3-round">Current</span> --> */}
       </h6>
-      <p className="nomargin">{props.project} {props.link && <a href={props.link}>Example</a>}</p>
-      <ul>{elements}</ul>
+      <h6>{props.project} {props.link && (
+            <button>
+              <a href={props.link} target="_blank">Klick für Demo</a>
+            </button>
+          )}</h6>
+      {/* <p className="nomargin">{props.link && <button><a href={props.link}>Example</a></button>}</p> */}
+      <ul>
+        {elements}
+          {/* {props.link && (
+            <li>
+            <button>
+              <a href={props.link} target="_blank">Click for Demo</a>
+            </button>
+            </li>
+          )} */}
+        
+      </ul>
+      {/* if (!props.subdescription) {
+              <p className="nomargin">{props.project} {props.link && <a href={props.link}>Example</a>}
+              <ul>{elements}</ul>
+              </p>
+        
+      }else{
+        <p className="nomargin">{props.project} {props.link && <a href={props.link}>Example</a>}
+              <ul>{elements}</ul>
+              </p>
+
+      } */}
+
       {/* <hr className="entry-hr"/> */}
     </div>
   );

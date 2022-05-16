@@ -1,6 +1,10 @@
 export default [
-    {title:"ground motion"},
-    {title:"seismology"},
-    {title:"GIS"},
-    {title:"PERN"}
+    {title:"Bodenbewegungsmodelle"},
+    {title:"Seismologie"},
+    {title:"QGIS"},
+    {title:"ArcGIS"},
+    {title:"Machine Learning"},
+    {title:"PERN"},
+    {title:"Wahrscheinlichkeitstheorie"},
+    
 ]

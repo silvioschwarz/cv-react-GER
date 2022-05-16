@@ -19,7 +19,7 @@ export default function App() {
       <LeftColumn />
       <RightColumn />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

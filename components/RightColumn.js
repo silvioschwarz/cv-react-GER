@@ -2,6 +2,7 @@ import React from "react";
 import Entry from "./Entry";
 import education from "../data/education";
 import experience from "../data/experience";
+import projects from "../data/projects";
 
 export default function RightColumn(props) {
   const educationElements = education.map((item) => {
@@ -31,6 +32,22 @@ export default function RightColumn(props) {
       />
     );
   });
+
+  const projectElements = projects.map((item) => {
+    return (
+      <Entry
+        key={item.jobtitle}
+        jobtitle={item.jobtitle}
+        company={item.company}
+        date={item.date}
+        project={item.project}
+        link={item.link}
+        description={item.description}
+      />
+    );
+  });
+
+
   return (
     <div className="w3-twothird right-column">
       {/* <div className="w3-container w3-card w3-white w3-margin-bottom">
@@ -43,7 +60,7 @@ export default function RightColumn(props) {
       <div className="w3-container w3-card w3-white w3-margin-bottom">
         <h2 className="w3-text-grey ">
           <i className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray"></i>
-          Work Experience
+          Arbeitserfahrung
         </h2>
         {experienceElements}
       </div>
@@ -51,7 +68,7 @@ export default function RightColumn(props) {
       <div className="w3-container w3-card w3-white w3-margin-bottom">
         <h2 className="w3-text-grey">
           <i className="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray"></i>
-          Education
+          Bildung
         </h2>
         {educationElements}
       </div>
@@ -59,9 +76,9 @@ export default function RightColumn(props) {
       <div className="w3-container w3-card w3-white">
         <h2 className="w3-text-grey">
           <i className="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray"></i>
-          Projects
+          Projekte
         </h2>
-        haha
+        {projectElements}
       </div>
 
       {/* <!-- End Right Column --> */}
