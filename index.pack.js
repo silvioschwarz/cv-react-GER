@@ -612,10 +612,26 @@ function Footer() {
       null,
       "Find me on social media."
     ),
-    _react2.default.createElement("i", { className: "fa fa-github fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
-    _react2.default.createElement("i", { className: "fa fa-linkedin fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
-    _react2.default.createElement("i", { className: "fa fa-instagram fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
-    _react2.default.createElement("i", { className: "fa fa-twitter fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
+    _react2.default.createElement(
+      "a",
+      { href: "http://www.github.com/silvioschwarz", target: "_blank" },
+      _react2.default.createElement("i", { className: "fa fa-github fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" })
+    ),
+    _react2.default.createElement(
+      "a",
+      { href: "https://www.linkedin.com/in/silvioschwarz", target: "_blank" },
+      _react2.default.createElement("i", { className: "fa fa-linkedin fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" })
+    ),
+    _react2.default.createElement(
+      "a",
+      { href: "http://www.instagram.com/slvschwrz", target: "_blank" },
+      _react2.default.createElement("i", { className: "fa fa-instagram fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" })
+    ),
+    _react2.default.createElement(
+      "a",
+      { href: "http://www.twitter.com/slvschwrz", target: "_blank" },
+      _react2.default.createElement("i", { className: "fa fa-twitter fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" })
+    ),
     _react2.default.createElement(
       "p",
       null,
