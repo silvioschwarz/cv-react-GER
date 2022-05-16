@@ -425,13 +425,14 @@ function App() {
 
   return _react2.default.createElement(
     "div",
-    { className: "w3-content w3-margin-top", style: { "maxwidth": "1440px" } },
+    { className: "w3-content w3-margin-top", style: { "max-width": "1440px" } },
     _react2.default.createElement(
       "div",
       { className: "w3-row-padding" },
       _react2.default.createElement(_LeftColumn2.default, null),
       _react2.default.createElement(_RightColumn2.default, null)
-    )
+    ),
+    _react2.default.createElement(_Footer2.default, null)
   );
 }
 
@@ -729,7 +730,7 @@ function LeftColumn(props) {
 
   return _react2.default.createElement(
     "div",
-    { className: "w3-third left-column" },
+    { className: "w3-third" },
     _react2.default.createElement(
       "div",
       { className: "w3-white w3-text-grey w3-card-4" },
@@ -956,31 +957,10 @@ function LeftColumn(props) {
         _react2.default.createElement(
           "div",
           { className: "wordcloud" },
-          _react2.default.createElement("img", { src: "./img/wordcloudGER-1.png" })
-        )
-      ),
-      _react2.default.createElement(
-        "footer",
-        { className: "w3-container w3-blue-gray w3-center w3-margin-top" },
-        _react2.default.createElement(
-          "p",
-          null,
-          "Social Media"
-        ),
-        _react2.default.createElement("i", { className: "fa fa-github fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
-        _react2.default.createElement("i", { className: "fa fa-linkedin fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
-        _react2.default.createElement("i", { className: "fa fa-instagram fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
-        _react2.default.createElement("i", { className: "fa fa-twitter fa-fw w3-margin-right w3-xxlarge w3-hover-opacity" }),
-        _react2.default.createElement(
-          "p",
-          null,
-          "Powered by",
-          " ",
-          _react2.default.createElement(
-            "a",
-            { href: "https://www.w3schools.com/w3css/default.asp", target: "_blank" },
-            "w3.css"
-          )
+          _react2.default.createElement("img", {
+            src: "./img/wordcloudGER-1.png",
+            style: { width: "400px" }
+          })
         )
       )
     ),
@@ -1091,7 +1071,7 @@ function RightColumn(props) {
       _react2.default.createElement(
         "h2",
         { className: "w3-text-grey" },
-        _react2.default.createElement("i", { className: "fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray" }),
+        _react2.default.createElement("i", { className: "fa fa-wrench fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray" }),
         "Projekte"
       ),
       projectElements

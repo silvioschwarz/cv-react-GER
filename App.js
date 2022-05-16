@@ -14,12 +14,12 @@ export default function App() {
   // );
 
   return(
-    <div className="w3-content w3-margin-top" style={ {"maxwidth": "1440px"} }>
+    <div className="w3-content w3-margin-top" style={ {"max-width": "1440px"} }>
       <div className="w3-row-padding">
       <LeftColumn />
       <RightColumn />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

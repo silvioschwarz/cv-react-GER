@@ -75,7 +75,7 @@ export default function RightColumn(props) {
 
       <div className="w3-container w3-card w3-white">
         <h2 className="w3-text-grey">
-          <i className="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray"></i>
+          <i className="fa fa-wrench fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray"></i>
           Projekte
         </h2>
         {projectElements}
