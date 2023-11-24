@@ -16,7 +16,7 @@ export default [
         skill: "70%"
     },
     {
-        language: "PERN",
+        language: "Frontend mit React",
         skill: "50%"
     }
 ]
