@@ -72,7 +72,8 @@ export default function RightColumn(props) {
         </h2>
         {educationElements}
       </div>
-
+{/* PROJECTS */}
+{/*
       <div className="w3-container w3-card w3-white">
         <h2 className="w3-text-grey">
           <i className="fa fa-wrench fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray"></i>
@@ -80,7 +81,7 @@ export default function RightColumn(props) {
         </h2>
         {projectElements}
       </div>
-
+    */}
       {/* <!-- End Right Column --> */}
     </div>
   );

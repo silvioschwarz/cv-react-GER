@@ -1,10 +1,19 @@
 export default [
     {
+        jobtitle: "Master of Science - Earth System Data Science and Remote Sensing",
+        company: "Universität Leipzig",
+        date: "Okt 2023 - heute",
+        project:"Earth System Components, Data Science, Remote Sensing",
+        description:
+        [
+            ],
+    },
+    {
         jobtitle: "GIS and Webmapping",
         company: "GIS Akademie Berlin",
         date: "Feb 2022 - Sep 2022",
         project:"ArcGIS, QGIS, Webmapping",
-        description: 
+        description:
         [
             "Georeferenzierung, Vektor-/Rasterdaten, Kartenlayout, Automatisierung", 
             "PyQGIS, PlugIn-Erstellung, Arbeiten mit PostgreSQL/PostGIS",
@@ -16,7 +25,7 @@ export default [
         company: "Universität Potsdam",
         date: "Okt 2011- Sep 2019",
         project: "Geophysik - 90/120 LP abgeschlossene Studienleistung",
-        description: 
+        description:
         [
             "Masterpraktikum: Wolfram|Alpha. 2012",
             "1. Abschlussarbeit: Sensitivity Study of a Bayesian Approach. 2014-2016",
@@ -28,7 +37,7 @@ export default [
         company: "Universität Potsdam",
         date: "Okt 2008  - Sep 2011",
         project:"Geologie, Mathematik, Physik, Chemie",
-        description: 
+        description:
         [
             "Bachelorpraktikum: Universität Leipzig. 2011",
             "Abschlussarbeit: Simulation von Bodenbewegungsszenarien von Starkbeben"
@@ -39,11 +48,11 @@ export default [
     //     company: "staatl. Gymnasium 'Klosterschule' Roßleben",
     //     date: "2008",
     //     project:"Mathematik, Geographie",
-    //     description: 
+    //     description:
     //     [
     //         "Abschlussarbeit: Naturkatastrophen und ihr Einfluss auf das Leben in der Gegenwart"
     //     ]
-    // },    
+    // },
 ]
 
 // <div className="w3-container">

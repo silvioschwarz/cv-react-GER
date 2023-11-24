@@ -48,11 +48,11 @@ export default function LeftColumn(props) {
             </p>
             <p className="info">
               <i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue-gray"></i>
-              Potsdam, Deutschland
+              Leipzig, Deutschland
             </p>
             <p className="info">
               <i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue-gray"></i>
-              admin@silvioschwarz.com
+              admin@silvioschwarz.xyz
             </p>
             <p className="info">
               <i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue-gray"></i>
