@@ -4,7 +4,6 @@ export default [
     {title:"QGIS"},
     {title:"ArcGIS"},
     {title:"Machine Learning"},
-    {title:"PERN"},
-    {title:"Wahrscheinlichkeitstheorie"},
-    
+    {title:"Frontend Development"},
+    {title:"Bayes'sche Inferenz"},
 ]

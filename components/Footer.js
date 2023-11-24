@@ -7,7 +7,10 @@ export default function Footer() {
       <a href="http://www.github.com/silvioschwarz" target="_blank"><i className="fa fa-github fa-fw w3-margin-right w3-xxlarge w3-hover-opacity"></i></a>
       <a href="https://www.linkedin.com/in/silvioschwarz" target="_blank"><i className="fa fa-linkedin fa-fw w3-margin-right w3-xxlarge w3-hover-opacity"></i></a>
       <a href="http://www.instagram.com/slvschwrz" target="_blank"><i className="fa fa-instagram fa-fw w3-margin-right w3-xxlarge w3-hover-opacity"></i></a>
-      <a href="http://www.twitter.com/slvschwrz" target="_blank"><i className="fa fa-twitter fa-fw w3-margin-right w3-xxlarge w3-hover-opacity"></i></a>
+      <a href="http://www.twitter.com/slvschwrz" target="_blank">
+      <i className="fa-brands fa-x-twitter fa-fw w3-margin-right w3-xxlarge w3-hover-opacity"></i></a>
+      <a href="https://bsky.app/profile/silvioschwarz.bsky.social" target="_blank">
+      <i className="fa-brands fa-skyatlas fa-fw w3-margin-right w3-xxlarge w3-hover-opacity"></i></a>
       <p>
         Powered by{" "}
         <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">
